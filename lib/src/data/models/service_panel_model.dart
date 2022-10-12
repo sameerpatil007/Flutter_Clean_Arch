@@ -1,0 +1,72 @@
+import '../../domain/entities/service_panel.dart';
+import 'service_panel_item_model.dart';
+
+class ServicePanelModel extends ServicePanel {
+  const ServicePanelModel({
+    required String id,
+    required int price,
+    required String panelType,
+    required String name,
+    required bool isCustom,
+    required int totalFeet,
+    required String pricingMethod,
+    required int pricePerFeet,
+    required bool isPerFeet,
+    required String description,
+    required bool isPackage,
+    required int oversizeQuantity,
+    required int oversizeCost,
+    required int hailCost,
+    required String dentSize,
+    required String dentCount,
+    required String addOnName,
+    required int addOnValue,
+    required bool isCustomAddOn,
+    required List<ServicePanelItemModel> subPanel,
+  }) : super(
+            id: id,
+            price: price,
+            panelType: panelType,
+            name: name,
+            isCustom: isCustom,
+            totalFeet: totalFeet,
+            pricingMethod: pricingMethod,
+            pricePerFeet: pricePerFeet,
+            isPerFeet: isPerFeet,
+            description: description,
+            isPackage: isPackage,
+            oversizeQuantity: oversizeQuantity,
+            oversizeCost: oversizeCost,
+            hailCost: hailCost,
+            dentSize: dentSize,
+            dentCount: dentCount,
+            addOnName: addOnName,
+            addOnValue: addOnValue,
+            isCustomAddOn: isCustomAddOn,
+            subPanel: subPanel);
+
+  factory ServicePanelModel.fromJson(Map<String, dynamic> json) {
+    return ServicePanelModel(
+      id: json['id'],
+      price: json['price'],
+      panelType: json['panelType'],
+      name: json['name'],
+      isCustom: json['isCustom'],
+      totalFeet: json['totalFeet'],
+      pricingMethod: json['pricingMethod'],
+      pricePerFeet: json['pricePerFeet'],
+      isPerFeet: json['isPerFeet'],
+      description: json['description'],
+      isPackage: json['isPackage'],
+      oversizeQuantity: json['oversizeQuantity'],
+      oversizeCost: json['oversizeCost'],
+      hailCost: json['hailCost'],
+      dentSize: json['dentSize'],
+      dentCount: json['dentCount'],
+      addOnName: json['addOnName'],
+      addOnValue: json['addOnValue'],
+      isCustomAddOn: json['isCustomAddOn'],
+      subPanel: json['subPanel'].map<ServicePanelItemModel>((x) => ServicePanelItemModel.fromJson(x)).toList(),
+    );
+  }
+}

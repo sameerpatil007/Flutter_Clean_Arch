@@ -1,0 +1,66 @@
+import '../../domain/entities/service_panel_item.dart';
+
+class ServicePanelItemModel extends ServicePanelItem {
+  const ServicePanelItemModel({
+    required String id,
+    required String subPanelType,
+    required int price,
+    required String name,
+    required bool isCustom,
+    required bool isRnR,
+    required int hoursRequired,
+    required String quadrantId,
+    required String repairType,
+    required String resin,
+    required String resinTint,
+    required String oemPart,
+    required String nagsId,
+    required String lotNumber,
+    required String expirationDate,
+    required String partNumber,
+    required bool isReceived,
+    required int cost,
+  }) : super(
+          id: id,
+          subPanelType: subPanelType,
+          price: price,
+          name: name,
+          isCustom: isCustom,
+          isRnR: isRnR,
+          hoursRequired: hoursRequired,
+          quadrantId: quadrantId,
+          repairType: repairType,
+          resin: resin,
+          resinTint: resinTint,
+          oemPart: oemPart,
+          nagsId: nagsId,
+          lotNumber: lotNumber,
+          expirationDate: expirationDate,
+          partNumber: partNumber,
+          isReceived: isReceived,
+          cost: cost,
+        );
+
+  factory ServicePanelItemModel.fromJson(Map<String, dynamic> json) {
+    return ServicePanelItemModel(
+      id: json['id'],
+      subPanelType: json['subPanelType'],
+      price: json['price'],
+      name: json['name'],
+      isCustom: json['isCustom'],
+      isRnR: json['isRnR'],
+      hoursRequired: json['hoursRequired'],
+      quadrantId: json['quadrantId'],
+      repairType: json['repairType'],
+      resin: json['resin'],
+      resinTint: json['resinTint'],
+      oemPart: json['oemPart'],
+      nagsId: json['nagsId'],
+      lotNumber: json['lotNumber'],
+      expirationDate: json['expirationDate'],
+      partNumber: json['partNumber'],
+      isReceived: json['isReceived'],
+      cost: json['cost'],
+    );
+  }
+}

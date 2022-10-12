@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "593095459432",
+    "firebase_url": "https://vehiclehub-83386.firebaseio.com",
+    "project_id": "vehiclehub-83386",
+    "storage_bucket": "vehiclehub-83386.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593095459432:android:6778c1a8b1dfd266acf1dd",
+        "android_client_info": {
+          "package_name": "com.vehiclehub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593095459432-upi1284umm7ei6k544htvk1ojq8cju6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlaPR8rmJvRSxC7Ohu0RnDMjyBKzpbY_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593095459432-upi1284umm7ei6k544htvk1ojq8cju6m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "593095459432-f7belsbq0iru38lstn825e1usukepspb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vehiclehub"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
